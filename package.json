@@ -1,0 +1,22 @@
+{
+  "name": "myspace-typora",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/main.js",
+  "bin": {
+    "myspace": "src/main.js"
+  },
+  "author": "Kennan Fattah <kennfatt@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "moment": "^2.29.1",
+    "move-file": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.3"
+  }
+}
