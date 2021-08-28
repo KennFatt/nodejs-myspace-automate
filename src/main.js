@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { spawn } from "child_process";
 import { getConfig } from "./config.js";
 import { Workspace } from "./lib.js";
