@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Space from "./space.js";
+import moment from "moment";
 
 export default class SpaceBuilder {
   #filePath = "";
@@ -79,7 +80,7 @@ export default class SpaceBuilder {
     const metadata = matter(fileContent)?.data;
 
     this.#title = metadata?.title;
-    this.#date = metadata?.date;
+    this.#date = moment(metadata?.date).format("YYYY-MM-DD");
 
     return this;
   };
